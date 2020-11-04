@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    background-color: orange;
+}
+
+
+}
+
+
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="simplepaymentfinal.html">
+  <div class="container">
+    <h1>Customer Details</h1>
+    <p>Please enter your Details.</p>
+    <hr>
+
+	First name:
+  <input type="text" name="firstname" >
+  <br>
+  Last name:
+  <input type="text" name="lastname" >
+  <br>
+
+    <label for="email">Email:</label>
+    <input type="text"  name="email" required>
+    <br>
+    
+    <label for="contact">Contact No:</label>
+    <input type="integer" name="contact"><br>
+Payment Method:<br>
+    
+<input type="radio" name="payment" value="CreditCard">Credit Card
+<input type="radio" name="payment" value="DebitCard">Debit Card
+<input type="radio" name="payment" value="CashOnDelivery">Cash on Delivery
+
+</form>
+
+
+    
+    <hr>
+    <p>Please Check Whether You Have Entered Correct Details.</p>
+
+    <button type="submit" class="registerbtn">Submit</button><br>
+ <button type="submit" formaction="simplepaymentfinal.html"></button>
+  </div>
+  
+  <div class="container signin">
+    
+  </div>
+</form>
+
+</body>
+</html>
